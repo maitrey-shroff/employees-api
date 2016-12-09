@@ -17,3 +17,17 @@
   Employee.create(first_name: first_name, last_name: last_name, email: email, ssn: ssn, birthdate: birthdate)
 
 end
+
+
+200.times do
+
+  address1 = Faker::Address.street_address
+  address2 = Faker::Address.secondary_address
+  city = Faker::Address.city
+  state = Faker::Address.state
+  zip = Faker::Address.zip
+  employee_id = rand(1..100)
+
+  Address.create(address1: address1, address2: address2, city: city, state: state, zip: zip, employee_id: employee_id)
+
+end

@@ -3,5 +3,8 @@ Rails.application.routes.draw do
 
   get "/show/:id", to: "employees#show"
 
-
+  post "/create", to: "employees#create"
+  delete "/delete/:id", to: "employees#destroy"
+  patch "/update/:id", to: "employees#update"
+  
 end
