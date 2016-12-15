@@ -1,7 +1,7 @@
 class Api::V2::EmployeesController < ApplicationController
 
   def index
-    @employee = Employee.all
+    @employees = Employee.all
   end
 
   def show
